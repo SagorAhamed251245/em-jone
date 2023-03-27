@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Link = (props) => {
+const Link = (props, item) => {
     return (
         <>
-        <a className='hover:text-accent' href={props.link}>{}</a>
+        <a className='hover:text-accent' href={props.link}>{props.children}</a>
         </>
     );
 };

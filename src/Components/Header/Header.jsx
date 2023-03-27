@@ -10,7 +10,10 @@ const Header = () => {
                 <img src={logo} alt="" />
             </div>
             <div className='flex gap-5 '>
-                <Link></Link>
+                <Link link={"/shop"}>Shop</Link>
+                <Link link={"/order"}>Order</Link>
+                <Link link={"/inventory"}>Inventory</Link>
+                <Link link={"/login"}>Login</Link>
             </div>
 
         </nav>
