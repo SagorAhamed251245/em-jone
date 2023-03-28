@@ -5,7 +5,7 @@ import Link from './Link';
 const Header = () => {
     return (
         <>
-        <nav className='h-20 px-10 bg-neutral flex items-center text-white justify-between'>
+        <nav  className='h-20 px-10 bg-neutral flex items-center text-white justify-between sticky top-0 z-40'>
             <div>
                 <img src={logo} alt="" />
             </div>

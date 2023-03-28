@@ -1,25 +1,33 @@
 import React, { useEffect, useState } from 'react';
-import OrderSummary from './OrderSummary';
+import Cart from '../Cart/Cart';
 import Products from './Products';
 
 
 
 const Shop = () => {
      const [products, setProducts]= useState([]);
+     const [cart, setCart]= useState([])
      useEffect(()=>{
         fetch('products.json')
         .then(res=> res.json())
         .then(data=> setProducts(data))
-     },[])
-     
+     },[]);
+
+
+      const handleAddToCart =(product)=>{
+       const newCart =[...cart, product]
+       setCart(newCart)
+
+      }
     return (
     <section className='grid grid-cols-5'>
         
         <div className='col-span-4 '>
-           <Products products={products}></Products>
+           <Products products={products} handleAddToCart={handleAddToCart} ></Products>
         </div>
-        <div className=' col-span-1 bg-accent h-screen'>
-            <OrderSummary></OrderSummary>
+        <div className=' col-span-1 '>
+            
+            <Cart cart={cart}></Cart>
         </div>
     </section>
 

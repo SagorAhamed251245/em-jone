@@ -1,0 +1,23 @@
+.cart{
+    background-color: rgb(100%, 88%, 70%);
+    padding: 25px;
+    color: rgb(0, 0, 0);
+    position: sticky;
+    top: 11%;
+    height: 88.98vh;
+}
+.cart h4{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.cart p{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.cart h6{
+    font-size: large;
+    font-weight: bold;
+}
